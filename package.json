@@ -1,0 +1,40 @@
+{
+  "name": "downsample-lttb-ts",
+  "version": "0.0.1",
+  "description": "Minimal weight downsample N array of numbers to K array of numbers squashed up.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn lint && yarn format && tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gantelo/downSample.git"
+  },
+  "keywords": [
+    "npm-downsample",
+    "downsample",
+    "lttb"
+  ],
+  "author": "Gabriel Antelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gantelo/downSample/issues"
+  },
+  "homepage": "https://github.com/gantelo/downSample#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.4.3"
+  }
+}
