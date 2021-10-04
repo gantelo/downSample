@@ -1,6 +1,6 @@
 {
   "name": "downsample-lttb-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Minimal weight downsample N array of numbers to K array of numbers squashed up.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
