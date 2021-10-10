@@ -10,7 +10,20 @@ type Props = {
 const floor = Math.floor;
 const abs = Math.abs;
 
-// TODO: adapt to use single array instead of points.
+export const singularDownSample = ({
+  series,
+  threshold,
+}: {
+  series: Point;
+  threshold: Threshold;
+}) => {
+  const seriesToPoints = series.map((value, idx) => [idx, value]);
+  return downsample({
+    series: seriesToPoints,
+    threshold,
+  }).map((point) => point[1]);
+};
+
 export const downsample = ({ series, threshold }: Props): Series => {
   const seriesLength: number = series.length;
 
