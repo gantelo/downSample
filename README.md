@@ -25,7 +25,7 @@ Usage example
 	const dummyDataSeries = [[1,2],[2,2],[3,3],[4,3],[5,6],[6,3],[7,3],[8,5],[9,4],[10,4],[11,1],[12,2]];
 
 	//pass the series and number of desired datapoints
-	const downsampledSeries = downsample(dummyDataSeries, 3);
+	const downsampledSeries = downsample({series:dummyDataSeries, threshold:3});
 	
 	console.log(downsampledSeries);	
 	//outputs [ [ 1, 2 ], [ 5, 6 ], [ 12, 2 ] ]
